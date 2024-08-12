@@ -1,6 +1,7 @@
 import { UsersRepository } from '@/repositories/users-repository'
 import { compare } from 'bcryptjs'
 import { InvalidCredentialsError } from './errors/invalid-credentials-error'
+import { User } from '@prisma/client'
 
 interface AthenticateUseCaseRequest {
   email: string
